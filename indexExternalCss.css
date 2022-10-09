@@ -1,0 +1,14 @@
+.navbar{
+    color: rgb(14, 19, 12);
+    background-color: rgb(122, 206, 206);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: bolder;
+    font-size: larger;
+}
+nav a{
+    margin-left: 60px;
+    color: black;   
+}
