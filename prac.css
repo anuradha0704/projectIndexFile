@@ -13,6 +13,7 @@
     align-items: flex-start;
     /* min-height: 15vh; */
     height: 30%;
+    /* position: fixed; */
     
     /* padding-top: 20px; */
     margin-left: 0px;
@@ -174,3 +175,70 @@ background-color: #ddd;
 .show {
 display: block;
 } 
+ marquee a
+{
+    color: black;
+    font-size: 20px;
+    padding: 20 28px;
+    text-decoration: none;
+    font-weight: bold;
+    /* text-transform: capitalize; */
+}
+marquee
+{
+    /* height:25%;  */
+    direction:right;
+}
+#slider
+{
+    overflow: hidden;
+}
+#slider figure
+{
+    position: absolute;
+    width: 500%;
+    margin: 0px;
+    left: 0px;
+    animation: 15s slider infinite;
+}
+#slider figure img
+{
+
+    float: left;
+    width: 20%;
+    height: 500px;
+}
+@keyframes slider
+{
+    0%{
+        left: 0;
+    }
+    20%
+    {
+        left: 0;
+    }
+    25%
+    {
+        left: -100%;
+    }
+    45%
+    {
+        left:-100%
+    }
+    50%
+    {
+        left: -200%;
+    }
+    70%
+    {
+        left: -200%;
+    }
+    75%
+    {
+        left:-300%
+    }
+    95%
+    {
+        left: -300%;
+    }
+}
