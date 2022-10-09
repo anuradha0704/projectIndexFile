@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <title>
+        Indax Page
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="circle">
+            <div class="logo"> </div>
+            <div class="text">
+                <p>Starwood College of Engineering</p>
+
+            </div>
+        </div>
+        <div class="title">
+            <h3>Shikshan Prasarak Mandal</h3>
+            <h1>STARWOOD  COLLEGE OF ENGINEERING</h1>
+            <h4>(Establish in 1994)</h4>
+        </div>
+    </div>
+    <script> const text = document.querySelector('.text p')
+        text.innerHTML = text.innerText.split("").map(
+            (char, i) =>
+                `<span style="transform:rotate(${i * 11.4}deg)">${char}</span>`
+        ).join("")
+    </script>
+</body>
+
+</html>
