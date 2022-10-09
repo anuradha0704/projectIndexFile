@@ -1,0 +1,73 @@
+<html>
+
+<head>
+    <title>
+        Indax Page
+    </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="pra.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="circle">
+            <div class="logo"> </div>
+            <div class="text">
+                <p>Starwood College of Engineering</p>
+
+            </div>
+        </div>
+        <div class="title">
+            <h3>Shikshan Prasarak Mandal</h3>
+            <h1>STARWOOD  COLLEGE OF ENGINEERING</h1>
+            <h4>(Establish in 1994)</h4>
+        </div>
+    </div>
+
+
+    <div class="navbar">
+      <a href="#home">   <i class="fa fa-home" aria-hidden="true"></i>&nbsp; HOME</a>
+        <a href="#news">      <i class="fa fa-university" aria-hidden="true"></i>&nbsp;ABOUT US</a>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="myFunction()"> <i class="fa fa-hospital-o" aria-hidden="true"></i>&nbsp;DEPARTMENT
+                 <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="myDropdown">
+                 <a href="#">E&TC</a>
+                 <a href="#">COMPUTER</a>
+                 <a href="#">MECH</a>
+                 <a href="#">CIVIL</a>
+           </div>
+        </div>
+        <a href="#news">  <i class="fa fa-users" aria-hidden="true"></i>&nbsp;ADMISSION</a>
+        <a href="#news">  <i class="fa fa-picture-o" aria-hidden="true"></i></i>&nbsp;GALLARY</a>
+        <a href="#news">  <i class="fa fa-industry" aria-hidden="true"></i>&nbsp;PLACEMENT CELL</a>
+        <a href="#news">  <i class="fa fa-phone" aria-hidden="true"></i>&nbsp;CONTACT US</a>
+  </div>  
+    <script> const text = document.querySelector('.text p')
+        text.innerHTML = text.innerText.split("").map(
+            (char, i) =>
+                `<span style="transform:rotate(${i * 11.4}deg)">${char}</span>`
+        ).join("")
+    </script>
+
+<script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(e) {
+      if (!e.target.matches('.dropbtn')) {
+      var myDropdown = document.getElementById("myDropdown");
+        if (myDropdown.classList.contains('show')) {
+          myDropdown.classList.remove('show');
+        }
+      }
+    }
+</script>
+</body>
+
+</html>
